@@ -1,0 +1,12 @@
+How to build:
+
+1. gcc -O2 -fpic -c -o test.o test.c 
+2. gcc -O -shared -fpic -o test.so test.o
+
+How to use:
+
+require "test"
+
+Important:
+
+Dont use the same name for the lib and the script as lua prefers files with the ".lua" extension!
